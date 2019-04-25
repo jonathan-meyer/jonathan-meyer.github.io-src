@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Rock Paper Scissors</h1>
+          <div>Your Play: <span id="user"></span></div>
+          <div>My Play: <span id="com"></span></div>
+          <div>Winner: <span id="winner"></span></div>
+          <div>&nbsp;</div>
+          <div>Wins: <span id="wins"></span></div>
+          <div>Losses: <span id="losses"></span></div>
+          <div>Ties: <span id="ties"></span></div>
+          <div>&nbsp;</div>
+          <div class="font-weight-bold">Press "R" or "P" "S" to play</div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function() {
+        var rps = ["r", "p", "s"];
+        var wins = 0;
+        var losses = 0;
+        var ties = 0;
+
+        function getComputersPlay() {
+          var i = Math.round((Math.random() * 100) % 2);
+          var c = rps[i];
+          return c;
+        }
+
+        function comparePlays(user, com) {
+          user = user.toLowerCase();
+          com = com.toLowerCase();
+
+          if (user === com) {
+            return "tie";
+          }
+
+          if (user === "r" && com === "s") {
+            return "user";
+          }
+
+          if (user === "s" && com === "p") {
+            return "user";
+          }
+
+          if (user === "p" && com === "r") {
+            return "user";
+          }
+
+          if (com === "r" && user === "s") {
+            return "com";
+          }
+
+          if (com === "s" && user === "p") {
+            return "com";
+          }
+
+          if (com === "p" && user === "r") {
+            return "com";
+          }
+        }
+
+        document.onkeyup = event => {
+          var userPlay = event.key;
+
+          if (rps.includes(userPlay)) {
+            var comPlay = getComputersPlay();
+            var winner = comparePlays(userPlay, comPlay);
+
+            switch (winner) {
+              case "user":
+                wins++;
+                break;
+              case "com":
+                losses++;
+                break;
+              case "tie":
+                ties++;
+                break;
+            }
+
+            $("#user").text(userPlay);
+            $("#com").text(comPlay);
+            $("#winner").text(winner);
+
+            $("#wins").text(wins);
+            $("#losses").text(losses);
+            $("#ties").text(ties);
+          }
+        };
+      });
+    </script>
+  </body>
+</html>
