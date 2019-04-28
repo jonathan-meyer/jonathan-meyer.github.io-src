@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -12,13 +12,18 @@ function App() {
       <header className="App-header">
         <Container>
           <Row>
-            <Col>As you walk down the long dark tunnel your sword starts to glow a faint blue.</Col>
+            <Col>
+              <h1>Stuff I've Done</h1>
+            </Col>
           </Row>
           <Row>
             <Col>
-              <Button variant="info" href="/old">
-                continue...
-              </Button>
+              <a href="https://jonathan-meyer.github.io/TriviaGame/">Trivia Game!</a>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <a href="https://jonathan-meyer.github.io/unit-4-game/">StarWars RPG</a>
             </Col>
           </Row>
         </Container>
