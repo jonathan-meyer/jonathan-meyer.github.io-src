@@ -1,34 +1,42 @@
 import React from "react";
-// import Button from "react-bootstrap/Button";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+
+import Home from "./Home";
+import About from "./About";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Container>
-          <Row>
-            <Col>
-              <h1>Stuff I've Done</h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <a href="https://jonathan-meyer.github.io/TriviaGame/">Trivia Game!</a>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <a href="https://jonathan-meyer.github.io/unit-4-game/">StarWars RPG</a>
-            </Col>
-          </Row>
-        </Container>
-      </header>
-    </div>
+    <Router>
+      <Container>
+        <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+          <Navbar.Brand href="#home">
+            <span role="img" aria-label="White and Nerdy">
+              👱🏻‍
+            </span>
+            Jonathan Meyer
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav>
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" exact component={About} />
+      </Container>
+    </Router>
   );
 }
 
