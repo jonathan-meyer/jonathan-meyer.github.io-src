@@ -21,6 +21,9 @@ function Home() {
             <ListGroup.Item>
               <Nav.Link href="https://jonathan-meyer.github.io/unit-4-game/">StarWars RPG</Nav.Link>
             </ListGroup.Item>
+            <ListGroup.Item>
+              <Nav.Link href="https://jonathan-meyer.github.io/jif-e-tas-tick/">Jif-E Tas-Tick</Nav.Link>
+            </ListGroup.Item>
           </ListGroup>
         </Card.Body>
       </Card>
