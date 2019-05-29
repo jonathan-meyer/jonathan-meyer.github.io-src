@@ -1,0 +1,78 @@
+{
+  "name": "Jonathan Meyer",
+  "avatar": "/old/mug.jpg",
+  "byline": "White and Nerdy",
+  "aboutMe": [
+    "I'm an average guy who likes nerdy things.",
+    "Hello my name is Jonathan and I am a nerd. I like to write in almost any language but English; languages such as JavaScript, Java and C/C++ are some of my favorite. You can see some of my work by paroozing my GitHub repository.",
+    "One of my other hobbies is electronics. At the age of 12 I built an digital analog clock out of TTL integrated circuits and tons of wire. I built it with instructions I found in a book at the library. My father helped me buy the parts and troubleshoot the bugs as I assembled it.",
+    "I also enjoy doing things out side. During the winter months I snowboard down the ice slopes of New England; in the summer I can be found hiking many of the trails in the White Mountains. On occasion I run road races; 10k is about the longest I dare to go.",
+    "I am also a fan of SyFy in all its forms: TV, moves, books and games. Both Star Wars and Star Trek are great but my favorite is Stargate; of the three I do believe that being able to generate a stable wormhole to a distant part of the universe is the most plausible."
+  ],
+  "timeLine": [
+    {
+      "date": "",
+      "title": "Word-Guess-Game",
+      "body": "Can you guess the StarWar Character?",
+      "image": { "url": "/word-guess.png" },
+      "links": [
+        {
+          "url": "https://github.com/jonathan-meyer/Word-Guess-Game",
+          "label": "Repo"
+        },
+        {
+          "url": "https://jonathan-meyer.github.io/Word-Guess-Game/",
+          "label": "Play"
+        }
+      ]
+    },
+    {
+      "date": "",
+      "title": "StarWars RPG",
+      "body": "Choose your character wisely",
+      "image": { "url": "/rpg.png" },
+      "links": [
+        {
+          "url": "https://github.com/jonathan-meyer/unit-4-game",
+          "label": "Repo"
+        },
+        {
+          "url": "https://jonathan-meyer.github.io/unit-4-game/",
+          "label": "Play"
+        }
+      ]
+    },
+    {
+      "date": "",
+      "title": "TrivaGame",
+      "body": "A Tribute to Alex Trebek",
+      "image": { "url": "/triva.png" },
+      "links": [
+        {
+          "url": "https://github.com/jonathan-meyer/TriviaGame",
+          "label": "Repo"
+        },
+        {
+          "url": "https://jonathan-meyer.github.io/TriviaGame/",
+          "label": "Play"
+        }
+      ]
+    },
+    {
+      "date": "",
+      "title": "Take a Hike",
+      "image": { "url": "/take-a-hike.png" },
+      "body": "Get out and enjoy the outdoors. You've been on yout butt all day!",
+      "links": [
+        {
+          "url": "https://github.com/jonathan-meyer/team-one-project-one",
+          "label": "Repo"
+        },
+        {
+          "url": "https://jonathan-meyer.github.io/team-one-project-one/",
+          "label": "Play"
+        }
+      ]
+    }
+  ]
+}

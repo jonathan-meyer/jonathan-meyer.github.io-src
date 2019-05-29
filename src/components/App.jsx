@@ -9,9 +9,9 @@ import About from "./About";
 
 function App() {
   return (
-    <Container>
+    <Container className="px-0">
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <span role="img" aria-label="White and Nerdy">
             👱🏻‍
           </span>
@@ -20,8 +20,12 @@ function App() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="https://github.com/jonathan-meyer" target="_blank">
+              GitHub
+            </Nav.Link>
+            <Nav.Link href="http://zorkonline.net" target="_blank">
+              Zorkonline
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
