@@ -2,6 +2,7 @@
   "name": "github-profile-src",
   "version": "0.1.1",
   "private": true,
+  "homepage" : "https://jonathan-meyer.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-solid-svg-icons": "^5.8.2",
