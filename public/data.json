@@ -14,7 +14,7 @@
       "date": "",
       "title": "Word-Guess-Game",
       "body": "Can you guess the StarWar Character?",
-      "image": { "url": "/word-guess.png" },
+      "image": { "url": "/jonathan-meyer.github.io_Word-Guess-Game_.png" },
       "links": [
         {
           "url": "https://github.com/jonathan-meyer/Word-Guess-Game",
@@ -30,7 +30,7 @@
       "date": "",
       "title": "StarWars RPG",
       "body": "Choose your character wisely",
-      "image": { "url": "/rpg.png" },
+      "image": { "url": "/jonathan-meyer.github.io_unit-4-game_.png" },
       "links": [
         {
           "url": "https://github.com/jonathan-meyer/unit-4-game",
@@ -46,7 +46,7 @@
       "date": "",
       "title": "TrivaGame",
       "body": "A Tribute to Alex Trebek",
-      "image": { "url": "/triva.png" },
+      "image": { "url": "/jonathan-meyer.github.io_TriviaGame_.png" },
       "links": [
         {
           "url": "https://github.com/jonathan-meyer/TriviaGame",
@@ -61,7 +61,7 @@
     {
       "date": "",
       "title": "Take a Hike",
-      "image": { "url": "/take-a-hike.png" },
+      "image": { "url": "/jonathan-meyer.github.io_team-one-project-one_.png" },
       "body": "Get out and enjoy the outdoors. You've been on yout butt all day!",
       "links": [
         {
@@ -71,6 +71,61 @@
         {
           "url": "https://jonathan-meyer.github.io/team-one-project-one/",
           "label": "Play"
+        }
+      ]
+    },
+    {
+      "date": "",
+      "title": "Friend Finder",
+      "image": { "url": "/friend-finder-stej.herokuapp.com_.png" },
+      "body": [
+        "Lets find a friend (because Facebook sucks)",
+        "This app is deployed to heroku but has no persistent data."
+      ],
+      "links": [
+        {
+          "url": "https://github.com/jonathan-meyer/friend-finder",
+          "label": "Repo"
+        },
+        {
+          "url": "https://friend-finder-stej.herokuapp.com/",
+          "label": "Play"
+        }
+      ]
+    },
+    {
+      "date": "",
+      "title": "Burger Time!",
+      "image": { "url": "/burger-stej.herokuapp.com_.png" },
+      "body": [
+        "This is my first app that has persistant data being stored in a MySQL database. The app is also has been deployed to heroku."
+      ],
+      "links": [
+        {
+          "url": "https://github.com/jonathan-meyer/burger",
+          "label": "Repo"
+        },
+        {
+          "url": "https://burger-stej.herokuapp.com/",
+          "label": "Play"
+        }
+      ]
+    },
+    {
+      "date": "",
+      "title": "Lighthouse Aficionado",
+      "image": { "url": "/lighthouse-aficionado.herokuapp.com_.png" },
+      "body": [
+        "This site/app was designed to be a social like app allowing the user to find lighthouses and share their experiences."
+      ],
+      "links": [
+        {
+          "url": "https://github.com/jonathan-meyer/irrelevant-data",
+          "label": "Repo"
+        },
+        {
+          "url": "https://lighthouse-aficionado.herokuapp.com/",
+          "label": "The Site"
         }
       ]
     }

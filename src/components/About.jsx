@@ -1,12 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 
 import request from "superagent";
-import { toImage } from "emoji-toolkit";
 
 import {
   VerticalTimeline,
